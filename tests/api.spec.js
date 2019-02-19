@@ -3,7 +3,7 @@
  */
 'use strict';
 
-const chai = require('chai');
+const chai = require('chai').use(require('chai-bytes'));
 const env = require('./env');
 chai.should();
 
@@ -27,7 +27,7 @@ describe('base64url-universal APIs', () => {
   describe('decode', () => {
     it('should properly decode data', async () => {
       const result = decode(testEncoding);
-      result.should.equal(testString);
+      result.should.equalBytes(_strToUint8Array(testString));
     });
   }); // end decode
 });
