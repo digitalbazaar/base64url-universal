@@ -4,7 +4,7 @@
 'use strict';
 
 const chai = require('chai');
-const env = require('../lib/env');
+const env = require('./env');
 chai.should();
 
 if(env.nodejs) {
