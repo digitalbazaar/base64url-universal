@@ -1,6 +1,6 @@
 {
   "name": "base64url-universal",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "description": "A library for managing cryptographic keys using Linked Data.",
   "homepage": "https://github.com/digitalbazaar/base64url-universal",
   "author": {
@@ -79,7 +79,7 @@
     "coverage-report": "nyc report",
     "lint": "eslint lib tests"
   },
-  "keywords" : [
+  "keywords": [
     "base64",
     "base64url"
   ]
