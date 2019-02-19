@@ -64,7 +64,7 @@
     ]
   },
   "browser": {
-    "base64url": false
+    "./lib/index.js": "./lib/browser.js"
   },
   "engines": {
     "node": "^8.3.0"
