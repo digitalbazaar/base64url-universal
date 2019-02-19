@@ -5,7 +5,7 @@
 
 const chai = require('chai').use(require('chai-bytes'));
 const env = require('./env');
-chai.should();
+const should = chai.should();
 
 if(env.nodejs) {
   global.TextEncoder = require('util').TextEncoder;
@@ -18,9 +18,26 @@ const testEncoding =
 
 describe('base64url-universal APIs', () => {
   describe('encode', () => {
-    it('should properly encode data', async () => {
+    it('should properly encode a Uint8Array', async () => {
       const result = encode(_strToUint8Array(testString));
       result.should.equal(testEncoding);
+    });
+    it('should properly encode a string', async () => {
+      const result = encode(testString);
+      result.should.equal(testEncoding);
+    });
+    it('throws TypeError on invalid input', async () => {
+      let result;
+      let error;
+      try {
+        // attempt to provide a number as a parameter
+        result = encode(1235232);
+      } catch(e) {
+        error = e;
+      }
+      should.not.exist(result);
+      should.exist(error);
+      (error instanceof TypeError).should.be.true;
     });
   }); // end encode
 
