@@ -68,7 +68,7 @@
     "./lib/index.js": "./lib/browser.js"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=8.3.0"
   },
   "scripts": {
     "test": "npm run test-node",
