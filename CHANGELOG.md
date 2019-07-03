@@ -1,6 +1,6 @@
 # base64url-universal ChangeLog
 
-## 1.0.1 - xxx
+## 1.0.1 - 2019-07-03
 
 ### Changed
 - Fix package description.
