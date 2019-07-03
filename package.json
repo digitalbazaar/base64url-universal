@@ -1,7 +1,7 @@
 {
   "name": "base64url-universal",
   "version": "1.0.1-0",
-  "description": "A library for managing cryptographic keys using Linked Data.",
+  "description": "Encode/decode \"Base64url Encoding\" format of JSON Web Signature (JWS) RFC7517.",
   "homepage": "https://github.com/digitalbazaar/base64url-universal",
   "author": {
     "name": "Digital Bazaar, Inc.",
