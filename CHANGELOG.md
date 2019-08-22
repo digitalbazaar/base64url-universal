@@ -1,5 +1,10 @@
 # base64url-universal ChangeLog
 
+## 1.1.0 - 2019-08-xx
+
+### Added
+- Add webpack build.
+
 ## 1.0.1 - 2019-07-03
 
 ### Changed
