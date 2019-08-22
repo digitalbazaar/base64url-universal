@@ -1,6 +1,6 @@
 {
   "name": "base64url-universal",
-  "version": "1.0.2-0",
+  "version": "1.1.0",
   "description": "Encode/decode \"Base64url Encoding\" format of JSON Web Signature (JWS) RFC7517.",
   "homepage": "https://github.com/digitalbazaar/base64url-universal",
   "author": {
