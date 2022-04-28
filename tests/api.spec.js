@@ -1,17 +1,13 @@
 /*!
- * Copyright (c) 2018-2019 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2018-2022 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
 
-const chai = require('chai').use(require('chai-bytes'));
-const env = require('./env');
+import chai from 'chai';
+import chaiBytes from 'chai-bytes';
+chai.use(chaiBytes);
 const should = chai.should();
 
-if(env.nodejs) {
-  global.TextEncoder = require('util').TextEncoder;
-}
-
-const {encode, decode} = require('..');
+import {encode, decode} from '../lib/index.js';
 const testString = 'The quick brown fox jumps over the lazy dog.';
 const testEncoding =
   'VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4';
