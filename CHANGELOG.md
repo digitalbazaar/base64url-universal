@@ -1,5 +1,13 @@
 # base64url-universal ChangeLog
 
+## 2.0.0 - 2022-xx-xx
+
+### Changed
+- **BREAKING**: Convert to module (ESM).
+- **BREAKING**: Require Node.js >=14.x.
+- Update dependencies.
+- Lint module.
+
 ## 1.1.0 - 2019-08-22
 
 ### Added
