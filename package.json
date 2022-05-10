@@ -19,6 +19,9 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "exports": "./lib/index.js",
+  "browser": {
+    "./lib/index.js": "./lib/browser.js"
+  },
   "files": [
     "dist/*.js",
     "dist/*.js.map",
@@ -57,9 +60,6 @@
       "html",
       "text-summary"
     ]
-  },
-  "browser": {
-    "./lib/index.js": "./lib/browser.js"
   },
   "engines": {
     "node": ">=14"
