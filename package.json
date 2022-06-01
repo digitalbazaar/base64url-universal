@@ -23,9 +23,7 @@
     "./lib/index.js": "./lib/browser.js"
   },
   "files": [
-    "dist/*.js",
-    "dist/*.js.map",
-    "lib/*.js"
+    "lib/**/*.js"
   ],
   "dependencies": {
     "base64url": "^3.0.1"
