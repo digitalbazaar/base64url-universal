@@ -29,7 +29,6 @@
     "base64url": "^3.0.1"
   },
   "devDependencies": {
-    "benchmark": "^2.1.4",
     "c8": "^7.11.3",
     "chai": "^4.3.6",
     "chai-bytes": "^0.1.2",
@@ -62,8 +61,7 @@
     "test": "npm run test-node",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} tests/*.spec.js",
     "test-karma": "karma start karma.conf.cjs",
-    "benchmark": "node benchmark/benchmark.js",
-    "coverage": "cross-env NODE_ENV=test c8 run test-node",
+    "coverage": "cross-env NODE_ENV=test c8 npm run test-node",
     "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly --reporter=text-summary --reporter=text npm run test-node",
     "coverage-report": "c8 report",
     "lint": "eslint ."
