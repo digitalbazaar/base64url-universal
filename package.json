@@ -49,12 +49,10 @@
     "webpack": "^5.72.1"
   },
   "c8": {
-    "exclude": [
-      "tests"
-    ],
     "reporter": [
-      "html",
-      "text-summary"
+      "lcov",
+      "text-summary",
+      "text"
     ]
   },
   "engines": {
@@ -65,12 +63,10 @@
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} tests/*.spec.js",
     "test-karma": "karma start karma.conf.cjs",
     "benchmark": "node benchmark/benchmark.js",
-    "coverage": "cross-env NODE_ENV=test c8 --reporter=lcov --reporter=text-summary npm run test-node",
-    "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly --reporter=text npm run test-node",
+    "coverage": "cross-env NODE_ENV=test c8 run test-node",
+    "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly --reporter=text-summary --reporter=text npm run test-node",
     "coverage-report": "c8 report",
-    "lint": "eslint .",
-    "prepublish": "npm run build",
-    "build": "webpack"
+    "lint": "eslint ."
   },
   "keywords": [
     "base64",
