@@ -3,6 +3,7 @@
 ## 2.0.0 - 2022-xx-xx
 
 ### Changed
+- **BREAKING**: Remove packaged `dist/` dir.
 - **BREAKING**: Convert to module (ESM).
 - **BREAKING**: Require Node.js >=14.x.
 - Update dependencies.
